@@ -6,10 +6,10 @@ import { WalletMultiButton } from "@solana/wallet-adapter-react-ui";
 import { SolanaLogo } from "components";
 import styles from "./index.module.css";
 
-export const HomeView: FC = ({}) => {
+export const HomeView: FC = ({ }) => {
   const { publicKey } = useWallet();
 
-  const onClick = () => {};
+  const onClick = () => { };
 
   return (
     <div className="container mx-auto max-w-6xl p-8 2xl:px-0">
