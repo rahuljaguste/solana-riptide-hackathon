@@ -6,7 +6,7 @@ import { ConnectionProvider } from "@solana/wallet-adapter-react";
 import "tailwindcss/tailwind.css";
 import "../styles/globals.css";
 import "../styles/App.css";
-import Layout from "../components/Layout";
+import Layout from "../components/layout";
 
 // set custom RPC server endpoint for the final website
 // const endpoint = "https://explorer-api.devnet.solana.com";
