@@ -4,7 +4,7 @@ import { HomeView } from "../views";
 
 const Home: NextPage = (props) => {
   return (
-    <div>
+    <div className="bg-black text-white">
       <Head>
         <title>Watch2Earn</title>
         <meta name="description" content="This site will fly high 🦤" />
