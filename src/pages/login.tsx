@@ -5,7 +5,7 @@ import {FaFacebookSquare, FaTwitter, FaDiscord, FaCaretDown} from 'react-icons/f
 const Login = () => {
   return (
       <div className="h-screen w-full pt-3 bg-black p-">
-        <div className="w-full sm:w-3/4 lg:w-4/12 px- mx-auto bg-[#252529] shadow-2xl">
+        <div className="w-full sm:w-3/4 lg:w-4/12 max-w-sm px- mx-auto bg-[#252529] shadow-2xl">
              <div className="text-center bg-[#404040] rounded-b-3xl overflow-hidden p-3">
                     <p className="text-3xl font-bold">Welcome onboard</p>
                     <p className="mt-2 text-base">Select how you would like to continue</p>
