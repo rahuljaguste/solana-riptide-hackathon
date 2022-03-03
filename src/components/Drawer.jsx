@@ -1,6 +1,6 @@
 export default function Drawer() {
   return (
-    <div className="h-screen drawer w-full fixed rounded z-10">
+    <div className="h-screen drawer w-full fixed rounded">
       <input id="sidebar" type="checkbox" className="drawer-toggle" />
       <div className="drawer-side">
         <label htmlFor="sidebar" className="drawer-overlay"></label>
