@@ -20,8 +20,11 @@
     "@solana/wallet-adapter-solflare": "^0.4.0",
     "@solana/wallet-adapter-sollet": "^0.8.0",
     "@solana/wallet-adapter-wallets": "^0.11.3",
+    "@solana/web3.js": "^1.36.0",
     "@tailwindcss/typography": "^0.4.1",
     "@types/lodash.orderby": "^4.6.6",
+    "@web3auth/core": "^0.3.1",
+    "@web3auth/web3auth": "^0.3.2",
     "daisyui": "^1.16.2",
     "lodash.orderby": "^4.6.0",
     "next": "12.1.0",
@@ -31,7 +34,8 @@
     "react-alert": "^7.0.3",
     "react-alert-template-basic": "^1.0.2",
     "react-countdown": "^2.3.2",
-    "react-dom": "17.0.2"
+    "react-dom": "17.0.2",
+    "react-icons": "^4.3.1"
   },
   "devDependencies": {
     "@types/react": "17.0.34",

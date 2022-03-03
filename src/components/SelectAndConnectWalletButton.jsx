@@ -2,11 +2,11 @@ import { FC, useEffect } from "react";
 import { useWallet } from "@solana/wallet-adapter-react";
 import { useWalletModal } from "@solana/wallet-adapter-react-ui";
 
-type Props = {
-  onUseWalletClick: () => void;
-};
+// type Props = {
+//   onUseWalletClick: () => void;
+// };
 
-export const SelectAndConnectWalletButton: FC<Props> = ({
+export const SelectAndConnectWalletButton = ({
   onUseWalletClick,
 }) => {
   const { setVisible } = useWalletModal();
@@ -17,7 +17,7 @@ export const SelectAndConnectWalletButton: FC<Props> = ({
       try {
         connect();
       } catch (error) {
-        console.log("Error connecting to the wallet: ", (error as any).message);
+        console.log("Error connecting to the wallet: ", (error ).message);
       }
     }
   }, [wallet]);
@@ -31,7 +31,7 @@ export const SelectAndConnectWalletButton: FC<Props> = ({
       }
       onUseWalletClick();
     } catch (error) {
-      console.log("Error connecting to the wallet: ", (error as any).message);
+      console.log("Error connecting to the wallet: ", (error).message);
     }
   };
 
