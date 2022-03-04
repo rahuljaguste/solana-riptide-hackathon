@@ -1,18 +1,26 @@
-export default function Navbar({ title }) {
+import { FaDiscord, FaFacebookF, FaLinkedin, FaTwitter } from 'react-icons/fa'
+export default function Navbar() {
   return (
-    <div className="navbar sticky top-0 z-10 hidden bg-background text-primary">
-      <div className="flex-none">
-        <label className="btn btn-square btn-ghost" htmlFor="sidebar">
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" className="inline-block w-5 h-5 stroke-current"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
-        </label>
-      </div>
-      <div className="flex-1">
-        <a className="btn btn-ghost normal-case text-xl">{title}</a>
-      </div>
-      <div className="flex-none">
-        <button className="btn btn-square btn-ghost">
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" className="inline-block w-5 h-5 stroke-current"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z"></path></svg>
-        </button>
+    <div className="bg-black shadow">
+      <div className="container mx-auto lg:px-4">
+        <div className="flex items-center justify-between py-2">
+          <div>
+            <img
+              src="/logotextgold.png"
+              className="w-10 h-10 text-yellow-600 ml-2 lg:ml-6"
+              viewBox="0 0 24 24"
+              alt="logo"
+            />
+          </div>
+          <div className="flex text-white">
+            <div className="flex justify-center space-x-1 lg:mr-16 pl-1 lg:pl-4 gap-1 lg:gap-3">
+              <a href="" target="_blank"><FaFacebookF className="h-5 w-5 text-white" /></a>
+              <a href="https://twitter.com/maxzproject" target="_blank"><FaTwitter className="h-5 w-5 text-white " /></a>
+              <a href="https://www.linkedin.com/company/maxzio/" target="_blank"><FaLinkedin className="h-6 w-6 text-white -mt-[0.05rem]" /></a>
+              <a href="https://discord.gg/x3sWSqat5A" target="_blank"><FaDiscord className="h-6 w-6 text-white " /></a>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   )

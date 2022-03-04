@@ -22,10 +22,8 @@ const WalletProvider = dynamic(
 function MyApp({ Component, pageProps }) {
   return (
     <ConnectionProvider endpoint={endpoint}>
-      <WalletProvider>
-        <Layout>
+      <WalletProvider WalletProvider>     
           <Component {...pageProps} />
-        </Layout>
       </WalletProvider>
     </ConnectionProvider>
   );

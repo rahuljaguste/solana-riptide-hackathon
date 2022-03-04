@@ -3,7 +3,7 @@ import Navbar from "./Navbar";
 
 export default function Layout({ children }) {
   return (
-    <div>
+    <div >
       <Navbar title="Watch2Earn" />
       <Drawer />
       <main>{children}</main>
