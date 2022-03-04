@@ -1,5 +1,4 @@
 import React from "react";
-import type { AppProps } from "next/app";
 import dynamic from "next/dynamic";
 import { ConnectionProvider } from "@solana/wallet-adapter-react";
 
@@ -20,7 +19,7 @@ const WalletProvider = dynamic(
   }
 );
 
-function MyApp({ Component, pageProps }: AppProps) {
+function MyApp({ Component, pageProps }) {
   return (
     <ConnectionProvider endpoint={endpoint}>
       <WalletProvider>

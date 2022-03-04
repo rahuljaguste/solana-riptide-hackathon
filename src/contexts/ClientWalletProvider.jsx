@@ -1,4 +1,4 @@
-import type { WalletProviderProps } from "@solana/wallet-adapter-react";
+
 import { WalletProvider } from "@solana/wallet-adapter-react";
 
 import {
@@ -12,11 +12,11 @@ import {
 import { useMemo } from "react";
 import { WalletModalProvider } from "@solana/wallet-adapter-react-ui";
 
-import('@solana/wallet-adapter-react-ui/styles.css' as any) ;
+import('@solana/wallet-adapter-react-ui/styles.css') ;
 
 export function ClientWalletProvider(
-  props: Omit<WalletProviderProps, "wallets">
-): JSX.Element {
+  props
+){
   const wallets = useMemo(
     () => [
       getPhantomWallet(),
