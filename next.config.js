@@ -35,14 +35,14 @@ const plugins = [
     withTM,
     {
       webpack5: true,
-      reactStrictMode: true,
+      reactStrictMode: false,
     },
   ],
 ];
 
 const nextConfig = {
   distDir: "build",
-  swcMinify: true,
+  swcMinify: false,
   webpack: (config, { isServer }) => {
     if (!isServer) {
       config.resolve.fallback.fs = false;
