@@ -14,10 +14,10 @@ export default function Navbar() {
           </div>
           <div className="flex text-white">
             <div className="flex justify-center space-x-1 lg:mr-16 pl-1 lg:pl-4 gap-1 lg:gap-3">
-              <a href="" target="_blank"><FaFacebookF className="h-5 w-5 text-white" /></a>
-              <a href="https://twitter.com/maxzproject" target="_blank"><FaTwitter className="h-5 w-5 text-white " /></a>
-              <a href="https://www.linkedin.com/company/maxzio/" target="_blank"><FaLinkedin className="h-6 w-6 text-white -mt-[0.05rem]" /></a>
-              <a href="https://discord.gg/x3sWSqat5A" target="_blank"><FaDiscord className="h-6 w-6 text-white " /></a>
+              <a href="" target="_blank" rel="noreferrer"><FaFacebookF className="h-5 w-5 text-white" /></a>
+              <a href="https://twitter.com/maxzproject" target="_blank" rel="noreferrer"><FaTwitter className="h-5 w-5 text-white " /></a>
+              <a href="https://www.linkedin.com/company/maxzio/" target="_blank" rel="noreferrer"><FaLinkedin className="h-6 w-6 text-white -mt-[0.05rem]" /></a>
+              <a href="https://discord.gg/x3sWSqat5A" target="_blank" rel="noreferrer"><FaDiscord className="h-6 w-6 text-white " /></a>
             </div>
           </div>
         </div>

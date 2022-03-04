@@ -25,7 +25,9 @@ export function ClientWalletProvider(
        getTorusWallet({
          options: {
            // TODO: Get your own tor.us wallet client Id
-           theme:'dark',
+           uxMode:'popup',
+           whiteLabel :'true',
+           
            clientId:
              "BFYmTkQIv1xx66Oq1L42YRRgTflpnlcxS_DF3AH2Lu3NSjDE8NOJWW9gl_5TlAGTvY8k1BBvzYpPcn5D6p5hTJk",
          },
