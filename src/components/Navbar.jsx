@@ -1,4 +1,5 @@
 import { FaDiscord, FaFacebookF, FaLinkedin, FaTwitter } from 'react-icons/fa'
+
 export default function Navbar() {
   return (
     <div className="bg-black shadow">

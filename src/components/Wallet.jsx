@@ -18,6 +18,7 @@ const Wallet = () => {
     if (wallet.connected && wallet.publicKey) {
         walletAddress = wallet.publicKey.toString()
     }
+    console.log(walletAddress)
 
     return (
         <div className="mt-4">
@@ -27,11 +28,11 @@ const Wallet = () => {
 
             <div className="multi-wrapper">
                 <span className="button-wrapper">
-                    <WalletModalProvider>
+                    <WalletModalProvider className="!bg-black">
                         <WalletMultiButton className="!bg-yellow-500 text-base text-white font-bold py-2 px-4  mt-4  rounded hover:opacity-80 "/>
                     </WalletModalProvider>
                 </span>
-                {wallet.connected && <WalletDisconnectButton />}
+                {wallet.connected && <WalletDisconnectButton className="!bg-yellow-500 text-base text-white font-bold py-2 px-4  mt-4  rounded hover:opacity-80"/>}
             </div>
         </div>
     );
