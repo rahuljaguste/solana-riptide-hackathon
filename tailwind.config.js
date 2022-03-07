@@ -11,13 +11,16 @@ module.exports = {
       // serif: ['Merriweather', 'serif'],
     },
     extend: {
-      // spacing: {
-      //   '128': '32rem',
-      //   '144': '36rem',
-      // },
-      // borderRadius: {
-      //   '4xl': '2rem',
-      // }
+      colors: {
+        background: {
+          DEFAULT: "#F2F2F2",
+          dark: "#DCDCDC",
+        },
+        primary: {
+          DEFAULT: "#363A41",
+        }
+
+      }
     },
   },
   variants: {

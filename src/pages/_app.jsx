@@ -1,11 +1,11 @@
 import React from "react";
-import type { AppProps } from "next/app";
 import dynamic from "next/dynamic";
 import { ConnectionProvider } from "@solana/wallet-adapter-react";
 
 import "tailwindcss/tailwind.css";
 import "../styles/globals.css";
 import "../styles/App.css";
+import Layout from "../components/layout";
 
 // set custom RPC server endpoint for the final website
 // const endpoint = "https://explorer-api.devnet.solana.com";
@@ -19,11 +19,13 @@ const WalletProvider = dynamic(
   }
 );
 
-function MyApp({ Component, pageProps }: AppProps) {
+function MyApp({ Component, pageProps }) {
   return (
     <ConnectionProvider endpoint={endpoint}>
       <WalletProvider>
-        <Component {...pageProps} />
+        <Layout>
+          <Component {...pageProps} />
+        </Layout>
       </WalletProvider>
     </ConnectionProvider>
   );
