@@ -18,6 +18,8 @@ const itemDataFromURL = (itemURL) => {
 const Item = () => {
 
     const [dialogOpen, setDialogOpen] = useState(false)
+    const [itemsCounter, setItemsCounter] = useState(1)
+    const [itemsInCartCounter, setItemsInCartCounter] = useState(0)
     const router = useRouter()
     const { itemURL } = router.query
 
@@ -25,6 +27,22 @@ const Item = () => {
 
     const handleDialogClose = () => {
         setDialogOpen(false)
+    }
+
+    const handleReduceItemsCounter = () => {
+        if(itemsCounter > 1)
+        {
+            setItemsCounter(itemsCounter-1)
+        }
+    }
+
+    const handleIncreaseItemsCounter = () => {
+        setItemsCounter(itemsCounter+1)
+    }
+
+    const handleAddToCart = () => {
+        setItemsInCartCounter(itemsCounter)
+        setDialogOpen(true)
     }
 
     return (
@@ -47,7 +65,12 @@ const Item = () => {
                         <li>48" (4 Foot Long) Faux Cashmere Loop Woven Rug</li>
                         <li>Rubber Non-Slip Underscore</li>
                     </ul>
-                    <button onClick={() => { setDialogOpen(true) }}>Add to cart</button>
+                    <div className="border-2 border-[#DDDDDD] flex items-center justify-between w-1/6">
+                        <button className="ml-2" onClick={handleReduceItemsCounter}>-</button>
+                        <span className="display:inline-block">{itemsCounter}</span>
+                        <button className="mr-2" onClick={handleIncreaseItemsCounter}>+</button>
+                    </div>
+                    <button onClick={handleAddToCart}>Add to cart</button>
                 </div>
 
             </div>

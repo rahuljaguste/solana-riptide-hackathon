@@ -10,6 +10,8 @@ export const items = [
     {id: "item4", src: "/item4.png", name: "TSM Logo Anorak Graphite", price: "80", url: "tsm-logo-anorak-graphite"}
 ]
 
+const CartContext = React.createContext();
+
 const TsmShop = () => {
     return (
         <TsmShopLayout>
