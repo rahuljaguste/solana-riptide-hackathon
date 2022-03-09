@@ -1,7 +1,8 @@
-export default function Drawer() {
+export default function Drawer({children}) {
   return (
     <div className="h-screen drawer w-full fixed rounded z-10">
       <input id="sidebar" type="checkbox" className="drawer-toggle" />
+      <div className="drawer-content">{children}</div> 
       <div className="drawer-side">
         <label htmlFor="sidebar" className="drawer-overlay"></label>
         <ul className="menu p-4 overflow-y-auto w-80 text-base-content bg-background-dark text-primary">

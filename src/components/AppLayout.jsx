@@ -3,10 +3,9 @@ import AppNavbar from "./AppNavbar";
 
 export default function AppLayout({ children }) {
   return (
-    <div>
+    <div className="min-h-screen bg-white">
       <AppNavbar title="Watch2Earn" />
-      <Drawer />
-      <main>{children}</main>
+      <Drawer>{children}</Drawer>
     </div>
   )
 }
