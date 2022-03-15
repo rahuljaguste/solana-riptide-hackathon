@@ -13,10 +13,9 @@ export default function AppNavbar({ title, toggleMenu }) {
           <div className="btn btn-ghost normal-case text-xl">{title}</div>
         </Link>
       </div>
-      <div className="flex-none">
-        <button className="btn btn-square btn-ghost">
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" className="inline-block w-5 h-5 stroke-current"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z"></path></svg>
-        </button>
+      <div className="flex space-x-4">
+        <button className="focus:outline-none h-10 w-10 bg-[#FFCF40] rounded-full">N</button>
+        <button className="focus:outline-none h-10 w-10 bg-[#FFCF40] rounded-full">J</button>
       </div>
     </div>
   )
