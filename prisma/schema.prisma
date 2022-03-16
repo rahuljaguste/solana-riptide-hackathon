@@ -1,0 +1,15 @@
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Nft {
+  id                   Int      @id @default(autoincrement())
+  description          String
+  name                 String
+  typeOfReward         String
+  value                Decimal  @db.Money
+  minimumSpendRequired Decimal  @db.Money
+  expiration           String
+  date                 DateTime
+}
